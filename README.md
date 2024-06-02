@@ -1,10 +1,11 @@
 # Polymesh Developer Portal
 
 ## Servers & live website
-`main` and `staging` branches are deployed automatically
-* staging: [https://tc-staging.polymesh.live/](https://tc-staging.polymesh.live/)
-* main: [https://developers.polymesh.live/](https://developers.polymesh.live/) (main website)
-* main: [https://tc-main.polymesh.live/](https://tc-main.polymesh.live/) (secondary url)
+`mainnet`, `testnet`, and `staging` branches are deployed automatically
+* testnet: [https://testnet-developers.polymesh.live/](https://testnet-developers.polymesh.live/) (testnet website)
+* testnet: [https://developers.polymesh.live/](https://developers.polymesh.live/) (testnet website; secondary url)
+* mainnet: [https://mainnet-developers.polymesh.network/](https://mainnet-developers.polymesh.network/) (mainnet website)
+* mainnet: [https://developers.polymesh.network/](https://developers.polymesh.network/) (mainnet website; secondary url)
 
 ## Project Setup
 
@@ -37,6 +38,6 @@ To build the deployable website, run `npm run build`. This will create the outpu
 You can find a markdown file in `features/feature_test.mdx` which demonstrates the use of all Markdown features and additional components. (This file will is not linked in the menu).
 
 ## Update workflow & Review process
-We use feature branches, named as `xx-feature-description`, where `xx` are the name initials. Once the change on the feature branch has been completed, a **PR towards `staging` should be opened.** From staging, the repository maintainers will open a PR towards main and make sure all changes have been reviewed. (If a change has already been approved on the initial PR into staging, no repeated review for this change is necessary).
+We use feature branches, named as `xx-feature-description`, where `xx` are the name initials. Once the change on the feature branch has been completed, a **PR towards `develop` should be opened.** From develop, the repository maintainers will open a PR towards staging and make sure all changes have been reviewed. (If a change has already been approved on the initial PR into develop, no repeated review for this change is necessary).
 
-**All content updates must be approved by the Polymath team (adamdossa) before being pushed to main.**
+**All content updates must be approved by the Polymath team (adamdossa) before being pushed to staging, testnet, and mainnet.**
